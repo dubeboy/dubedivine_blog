@@ -8,15 +8,19 @@
     padding: 0 60px 0 60px;
 }
 
-.divine-img {
-    align-content: center;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.divineImg {
+    /*align-content: center;*/
+    /*border-radius: 50%;*/
+
 }
 
-.divine-img img {
-/*    Might want to add a small border to the img*/
+.divineImg img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 16px;
+    border: 3px solid #fff;
+    object-fit: cover;
 }
 
 .nav ul {
@@ -25,6 +29,7 @@
     align-items: inherit;
     list-style: none;
     width: 100%;
+    padding-inline-start: 0;
 }
 
 .nav ul li a {

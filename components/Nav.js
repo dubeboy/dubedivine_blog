@@ -1,12 +1,14 @@
 
 import navStyles from '../styles/Nav.module.css'
 import Link from 'next/link'
+import {server} from "../config";
 
-const Nav = ({divine_profile_photo}) => {
+const Nav = ({ author }) => {
+    console.log(author)
     return (
         <nav className={navStyles.nav}>
             <div className={navStyles.divineImg}>
-                <img src={divine_profile_photo.thumbnailUrl} alt={author.name} />
+                <img src="/divine_dube.jpeg" alt="Divine Dube" />
             </div>
             <ul>
                 <li>
@@ -21,6 +23,16 @@ const Nav = ({divine_profile_photo}) => {
             </ul>
         </nav>
     )
+}
+
+Nav.getInitialProps = async (ctx) => {
+    const res = await fetch(`${server}/author`)
+    const divine = await res.json()
+    return {
+        props: {
+            divine
+        }
+    }
 }
 
 export default Nav

@@ -1,0 +1,26 @@
+### Get Blogs
+
+GET http://localhost:1337/blogs
+Accept: application/json
+
+### Find Blog
+
+GET http://localhost:1337/blogs/1
+Accept: application/json
+
+### Get tags
+
+GET http://localhost:1337/tags
+Accept: application/json
+
+### TODO: Create find [blogs] by tag
+
+### Get a single tag
+
+GET http://localhost:1337/tags/1
+Accept: application/json
+
+### Get author
+
+GET http://localhost:1337/author
+Accept: application/json
