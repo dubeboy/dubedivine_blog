@@ -3,8 +3,22 @@ import {server} from "../config";
 
 export default function Home({ blogs }) {
   return (
-    <div className={styles.container}>
-      <p>Hello</p>
+    <div className={styles.mainContainer}>
+     <div className={styles.blogCard}>
+
+     </div>
+      <div className={styles.blogCard}>
+
+      </div>
+      <div className={styles.blogCard}>
+
+      </div>
+      <div className={styles.blogCard}>
+
+      </div>
+      <div className={styles.blogCard}>
+
+      </div>
 
     </div>
   )
