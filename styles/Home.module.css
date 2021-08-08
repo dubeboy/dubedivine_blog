@@ -9,10 +9,21 @@
 }
 
 .blogCard {
-  width: 300px;
-  height: 200px;
-  background-color: rebeccapurple;
+    width: 300px;
+    height: 200px;
+    background-color: #eaeaea;
+    border-radius: 16px;
+    padding: 16px;
+    font-weight: bold;
+
 }
+
+.cardHeadingText {
+    font-weight: 700;
+    font-size: 34pt;
+    margin: 0 0 8px;
+}
+
 
 @media (max-width: 600px) {
   .mainContainer {

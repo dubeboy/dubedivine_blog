@@ -4,22 +4,11 @@ import {server} from "../config";
 export default function Home({ blogs }) {
   return (
     <div className={styles.mainContainer}>
-     <div className={styles.blogCard}>
-
-     </div>
-      <div className={styles.blogCard}>
-
-      </div>
-      <div className={styles.blogCard}>
-
-      </div>
-      <div className={styles.blogCard}>
-
-      </div>
-      <div className={styles.blogCard}>
-
-      </div>
-
+        {blogs.map((blog) => (
+             <div className={styles.blogCard}>
+                <p className={styles.cardHeadingText}>{blog.title}</p>
+             </div>
+        ))}
     </div>
   )
 }
