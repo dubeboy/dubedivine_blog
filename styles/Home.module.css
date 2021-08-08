@@ -3,10 +3,10 @@
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
     flex-wrap: wrap;
     grid-gap: 16px;
 }
+
 
 .blogCard {
     width: 300px;

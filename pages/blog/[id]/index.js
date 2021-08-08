@@ -1,9 +1,10 @@
 import {server} from "../../../config";
+import styles from '../../../styles/Blog.module.css'
+
 
 export default function blog({ blog }) {
     return (
-        <div >
-            Hello
+        <div className={styles.blogContainer}>
             {blog.title}
         </div>
     )

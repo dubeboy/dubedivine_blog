@@ -1,0 +1,10 @@
+.blogContainer {
+    margin-top: 16px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    background-color: dimgrey ;
+}
+
