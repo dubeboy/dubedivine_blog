@@ -7,6 +7,9 @@ export default function Home({ blogs }) {
         {blogs.map((blog) => (
              <div className={styles.blogCard}>
                 <p className={styles.cardHeadingText}>{blog.title}</p>
+               <div className={styles.contentSnippet}>
+                 <span className={styles.subject}>{blog.content}</span>
+               </div>
              </div>
         ))}
     </div>
