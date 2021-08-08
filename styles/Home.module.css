@@ -29,19 +29,34 @@
 }
 
 .contentSnippet {
-    overflow: hidden;
+    overflow: auto;
     text-overflow: ellipsis;
-    display:inline-block;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags p {
+    padding: 4px;
+    background-color: #219ebc;
+    margin: 0 8px 0 0;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .subject {
+    padding: 0;
+    margin: 8px 0 0;
 }
 
 .cardHeadingText {
     font-weight: 700;
-    font-size: 34pt;
-    margin: 0 0 8px;
+    font-size: 25pt;
+    margin: 8px 0 0;
     overflow-wrap: break-word;
+    word-wrap: anywhere;
 }
 
 
