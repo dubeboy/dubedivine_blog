@@ -11,7 +11,7 @@ export default function blog({ blog }) {
                     <p style={{backgroundColor: tag.color}}>tag</p>
                 ))}
             </div>
-            <p className={styles.publisedDate}>Published on: {new Date(blog.published_at).toDateString()}</p>
+            <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
             <p className={styles.blogTitle}>{blog.title}</p>
             <div className={styles.blogContent}>
                 <ReactMarkdown>{blog.content}</ReactMarkdown>
