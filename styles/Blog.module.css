@@ -1,10 +1,52 @@
-.blogContainer {
+.mainContainer {
     margin-top: 16px;
     width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    background-color: dimgrey ;
 }
+
+.blogTitle {
+    font-weight: 700;
+    font-size: 34pt;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.blogContent {
+   width: 100%;
+}
+
+.blogContent p {
+    line-height: 1.6;
+    font-size: 12.5pt;
+
+}
+
+.blogContent code {
+    /*background-color: red;*/
+    padding: 16px;
+}
+
+.blogContent pre {
+    width: 100%;
+    background-color: #c7c7c7;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.tags {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+}
+
+@media (max-width: 600px) {
+    .mainContainer {
+        width: 100%;
+        display: block;
+    }
+}
+
 

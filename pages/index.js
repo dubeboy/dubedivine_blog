@@ -9,7 +9,7 @@ export default function Home({ blogs }) {
         {blogs.map((blog) => (
             <Link  href="/blog/[id]" as={`/blog/${blog.id}`}>
               <div className={styles.blogCard}>
-                <div className={styles.tags}>
+                <div className="tags">
                   {blog.tags.map((tag) => (
                       <p style={{backgroundColor: tag.color}}>tag</p>
                   ))}
@@ -20,8 +20,6 @@ export default function Home({ blogs }) {
                 </div>
               </div>
             </Link>
-
-
         ))}
     </div>
   )

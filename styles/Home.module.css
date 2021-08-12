@@ -33,19 +33,6 @@
     text-overflow: ellipsis;
 }
 
-.tags {
-    display: flex;
-    flex-direction: row;
-}
-
-.tags p {
-    padding: 4px;
-    background-color: #219ebc;
-    margin: 0 8px 0 0;
-    border-radius: 5px;
-    text-align: center;
-}
-
 .subject {
     padding: 0;
     margin: 8px 0 0;
@@ -58,7 +45,6 @@
     overflow-wrap: break-word;
     word-wrap: anywhere;
 }
-
 
 @media (max-width: 600px) {
   .mainContainer {

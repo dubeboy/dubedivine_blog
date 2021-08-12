@@ -13,3 +13,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tags p {
+  padding: 4px;
+  background-color: #219ebc;
+  margin: 0 8px 0 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
