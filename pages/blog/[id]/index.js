@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 
 export default function blog({ blog }) {
     return (
-        <div className={styles.mainContainer}>
+        <div className="mainContainer">
             <div className="tags">
                 {blog.tags.map((tag) => (
                     <p style={{backgroundColor: tag.color}}>tag</p>

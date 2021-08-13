@@ -46,3 +46,12 @@ footer p {
   padding: 0;
 }
 
+.mainContainer {
+  margin-top: 16px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
