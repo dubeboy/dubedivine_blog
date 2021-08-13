@@ -55,3 +55,19 @@ footer p {
   align-items: start;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 34pt;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+

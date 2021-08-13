@@ -18,12 +18,10 @@ const Nav = ({ author }) => {
                 <li className={router.pathname === "/" ? navStyles.active: ""}>
                     <Link href='/'>Home</Link>
                 </li>
-                <li>
+                <li className={router.pathname === "/about" ? navStyles.active: ""} >
                     <Link href='/about'>About</Link>
                 </li>
-                <li>
-                    <Link href='#'>Contact</Link>
-                </li>
+
             </ul>
         </nav>
     )

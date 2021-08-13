@@ -58,4 +58,9 @@
     width: 100%;
     display: block;
   }
+
+    .blogCard {
+        margin-bottom: 16px;
+    }
+
 }

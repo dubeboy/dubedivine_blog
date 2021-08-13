@@ -43,6 +43,11 @@
 .boldDesc {
     margin: 0;
     padding: 16px;
+    text-align: center;
+
+
+
+
 }
 
 .nav ul {
@@ -68,4 +73,12 @@
 
 .nav ul li a {
     margin: 5px 15px;
+}
+
+@media (max-width: 600px) {
+.boldDesc {
+    line-height: 1.6;
+}
+
+
 }

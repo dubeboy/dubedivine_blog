@@ -1,11 +1,10 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
+import styles from "../styles/About.module.css";
 import {server} from "../config";
 
 export default function About({ blogs }) {
     return (
         <div className="mainContainer">
-            <p>Hello</p>
+            <p className={styles.aboutHeading}>About Divine</p>
         </div>
     )
 }
