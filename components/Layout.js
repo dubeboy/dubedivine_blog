@@ -1,6 +1,7 @@
 import Nav from './Nav'
 import styles from '../styles/Layout.module.css'
 import Head from "next/head";
+import Footer from "./Footer";
 
 const Layout = ({children}) => {
     return (
@@ -15,7 +16,9 @@ const Layout = ({children}) => {
                 <main>
                     { children }
                 </main>
+
             </div>
+            <Footer />
         </>
     )
 }

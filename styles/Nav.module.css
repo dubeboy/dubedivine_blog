@@ -1,5 +1,6 @@
 .nav {
-    background: #219ebc;
+    /*219ebc*/
+    background: #16324f;
     color: #fff;
     display: flex;
     align-items: center;
@@ -11,8 +12,17 @@
 .divineImg {
     /*align-content: center;*/
     /*border-radius: 50%;*/
+    padding-top: 16px;
 
 }
+
+.active {
+    color: white;
+    background-color: #f34e4e;
+    border-radius: 10px;
+}
+
+
 
 .divineImg img {
     height: 130px;
@@ -23,6 +33,18 @@
     object-fit: cover;
 }
 
+.authorName {
+    margin: 0;
+    padding: 16px 0px 4px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.boldDesc {
+    margin: 0;
+    padding: 16px;
+}
+
 .nav ul {
     display: flex;
     justify-content: center;
@@ -30,7 +52,19 @@
     list-style: none;
     width: 100%;
     padding-inline-start: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin: 0;
 }
+
+.nav li {
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    display: flex;
+}
+
 
 .nav ul li a {
     margin: 5px 15px;

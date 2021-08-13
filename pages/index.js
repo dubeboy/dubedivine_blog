@@ -16,7 +16,7 @@ export default function Home({ blogs }) {
                 </div>
                 <p className={styles.cardHeadingText}>{blog.title}</p>
                 <div className={styles.contentSnippet}>
-                  <p className={styles.subject}>{blog.content}</p>
+                  <p className={styles.subject}>{blog.content.substring(0, 140)}</p>
                 </div>
               </div>
             </Link>
