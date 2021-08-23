@@ -1,7 +1,7 @@
-import {server} from "../../../config";
-import styles from '../../../styles/Blog.module.css'
+import {server} from "../../config";
+import styles from '../../styles/Blog.module.css'
 import ReactMarkdown from 'react-markdown'
-import Layout from "../../../components/Layout";
+import Layout from "../../components/Layout";
 
 
 export default function blog({ blog }) {
@@ -25,7 +25,7 @@ export default function blog({ blog }) {
 }
 
 export const getStaticProps = async (context) => {
-    const res = await fetch(`${server}/blogs/${context.params.id}`)
+    const res = await fetch(`${server}/blogs/${context.params.slug}`)
     const blog = await res.json()
 
     return {
@@ -39,8 +39,8 @@ export const  getStaticPaths = async () => {
     const res = await fetch(`${server}/blogs`)
     const blogs = await res.json()
 
-    const ids = blogs.map(blog => blog.id)
-    const paths = ids.map(id => ({params: {id: id.toString()}}))
+    const slugs = blogs.map(blog => blog.slug)
+    const paths = slugs.map(slug => ({params: {slug: slug}}))
 
     return {
         paths,

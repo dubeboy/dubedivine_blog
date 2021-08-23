@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 const Nav = () => {
     const router = useRouter()
 
-    let isHomeActive = (router.pathname === "/" || router.pathname === "/blog/[id]") ? navStyles.active : "";
+    let isHomeActive = (router.pathname === "/" || router.pathname === "/blog/[slug]") ? navStyles.active : "";
 
     return (
         <nav className={navStyles.nav}>

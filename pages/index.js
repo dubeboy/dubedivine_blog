@@ -12,7 +12,7 @@ export default function Home({blogs}) {
 
             <div className={styles.mainContainer}>
                 {blogs.map((blog) => (
-                    <Link href="/blog/[id]" as={`/blog/${blog.id}`}>
+                    <Link href="/blog/[id]" as={`/blog/${blog.slug}`}>
                         <div className={styles.blogCard}>
                             <div className="tags">
                                 {blog.tags.map((tag) => (
