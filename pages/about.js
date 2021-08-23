@@ -1,13 +1,17 @@
 import styles from "../styles/About.module.css";
 import {server} from "../config";
 import ReactMarkdown from "react-markdown";
+import Layout from "../components/Layout";
 
 export default function About({ author }) {
     return (
-        <div className="mainContainer">
-            <p className="title">About {author.divine}</p>
-            <ReactMarkdown>{author.about}</ReactMarkdown>
-        </div>
+        <Layout title="About Divine Dube">
+            <div className="mainContainer">
+                <p className="title">About {author.divine}</p>
+                <ReactMarkdown>{author.about}</ReactMarkdown>
+            </div>
+        </Layout>
+
     )
 }
 

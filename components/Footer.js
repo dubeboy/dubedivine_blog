@@ -2,7 +2,7 @@ import Head from "next/head";
 import Nav from "./Nav";
 import styles from "../styles/Layout.module.css";
 
-const Layout = () => {
+const Footer = () => {
     return (
         <footer>
             <p>Copyright &copy; Divine Dube {new Date().getFullYear()} </p>
@@ -12,4 +12,4 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default Footer

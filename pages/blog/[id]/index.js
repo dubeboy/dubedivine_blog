@@ -1,22 +1,26 @@
 import {server} from "../../../config";
 import styles from '../../../styles/Blog.module.css'
 import ReactMarkdown from 'react-markdown'
+import Layout from "../../../components/Layout";
 
 
 export default function blog({ blog }) {
     return (
-        <div className="mainContainer">
-            <div className="tags">
-                {blog.tags.map((tag) => (
-                    <p style={{backgroundColor: tag.color}}>tag</p>
-                ))}
+        <Layout title={blog.title}>
+            <div className="mainContainer">
+                <div className="tags">
+                    {blog.tags.map((tag) => (
+                        <p style={{backgroundColor: tag.color}}>tag</p>
+                    ))}
+                </div>
+                <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
+                <p className="title">{blog.title}</p>
+                <div className={styles.blogContent}>
+                    <ReactMarkdown>{blog.content}</ReactMarkdown>
+                </div>
             </div>
-            <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
-            <p className="title">{blog.title}</p>
-            <div className={styles.blogContent}>
-                <ReactMarkdown>{blog.content}</ReactMarkdown>
-            </div>
-        </div>
+        </Layout>
+
     )
 }
 
