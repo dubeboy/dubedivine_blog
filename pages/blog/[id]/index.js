@@ -14,7 +14,7 @@ export default function blog({ blog }) {
                     ))}
                 </div>
                 <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
-                <p className="title">{blog.title}</p>
+                <h1 className="title">{blog.title}</h1>
                 <div className={styles.blogContent}>
                     <ReactMarkdown>{blog.content}</ReactMarkdown>
                 </div>
