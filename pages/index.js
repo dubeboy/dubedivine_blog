@@ -9,6 +9,7 @@ export default function Home({blogs}) {
         <>
         <Layout title="Divine Dube Tech Blog"
                 metaDescription="A Blog about Flutter, iOS and Android development">
+
             <div className={styles.mainContainer}>
                 {blogs.map((blog) => (
                     <Link href="/blog/[id]" as={`/blog/${blog.id}`}>
