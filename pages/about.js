@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 export default function About({ author }) {
     return (
-        <Layout title="About Divine Dube">
+        <Layout title="About Divine Dube" metaDescription="About this website">
             <div className="mainContainer">
                 <p className="title">About {author.divine}</p>
                 <ReactMarkdown>{author.about}</ReactMarkdown>

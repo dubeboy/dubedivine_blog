@@ -6,7 +6,7 @@ import Layout from "../../../components/Layout";
 
 export default function blog({ blog }) {
     return (
-        <Layout title={blog.title}>
+        <Layout title={`${blog.title} | Divine Dube Blog`} metaDescription={blog.metaDescription}>
             <div className="mainContainer">
                 <div className="tags">
                     {blog.tags.map((tag) => (

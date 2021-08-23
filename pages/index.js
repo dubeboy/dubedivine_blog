@@ -7,7 +7,8 @@ import Layout from "../components/Layout";
 export default function Home({blogs}) {
     return (
         <>
-        <Layout title="Divine Dube Tech Blog">
+        <Layout title="Divine Dube Tech Blog"
+                metaDescription="A Blog about Flutter, iOS and Android development">
             <div className={styles.mainContainer}>
                 {blogs.map((blog) => (
                     <Link href="/blog/[id]" as={`/blog/${blog.id}`}>
