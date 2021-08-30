@@ -3,7 +3,6 @@ import styles from '../../styles/Blog.module.css'
 import ReactMarkdown from 'react-markdown'
 import Layout from "../../components/Layout";
 
-
 export default function blog({ blog }) {
     return (
         <Layout title={`${blog.title} | Divine Dube Blog`} metaDescription={blog.metaDescription}>
@@ -15,8 +14,9 @@ export default function blog({ blog }) {
                 </div>
                 <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
                 <h1 className="title">{blog.title}</h1>
-                <div className={styles.blogContent}>
+                <div className={styles.blogContent} >
                     <ReactMarkdown>{blog.content}</ReactMarkdown>
+                    <pre><a href={blog.external_link.link} target="_blank">{blog.external_link.title}</a></pre>
                 </div>
             </div>
         </Layout>
