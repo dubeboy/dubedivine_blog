@@ -16,12 +16,18 @@ export default function blog({ blog }) {
                 <h1 className="title">{blog.title}</h1>
                 <div className={styles.blogContent} >
                     <ReactMarkdown>{blog.content}</ReactMarkdown>
-                    <pre><a href={blog.external_link.link} target="_blank">{blog.external_link.title}</a></pre>
+                    <RenderExternalDocumentIfAny blog={blog} />
                 </div>
             </div>
         </Layout>
-
     )
+
+    function RenderExternalDocumentIfAny({ blog }) {
+        if (blog.external_link !== null) {
+            return (<pre><a href={blog.external_link.link} target="_blank">{blog.external_link.title}</a></pre>)
+        }
+        return null
+    }
 }
 
 export const getStaticProps = async (context) => {
