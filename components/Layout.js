@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 
 const Layout = ({children, title, metaDescription }) => {
 
-    const { asPath, pathName} = useRouter()
+    const { asPath } = useRouter()
 
     return (
         <>
@@ -18,7 +18,7 @@ const Layout = ({children, title, metaDescription }) => {
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@divinedube" />
                 <meta name="twitter:creator" content="@divinedube" />
-                <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+                <meta property="og:url" content={`https://dubedivine.com${asPath}`} />
                 <meta property="og:title" content={ title } />
                 <meta property="og:description" content={ metaDescription } />
                 <meta property="og:image" content="/divine_dube.jpeg" />
