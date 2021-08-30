@@ -21,6 +21,29 @@
     border-radius: 10px;
 }
 
+.blogContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 8px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.blogContent em {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: block;
+}
+
+.externalLink {
+    padding: 16px;
+    background-color: #1a4f16;
+    border-radius: 10px;
+}
+
 .tags {
     display: inline-block;
     zoom:1;

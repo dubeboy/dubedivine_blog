@@ -24,7 +24,7 @@ export default function blog({ blog }) {
 
     function RenderExternalDocumentIfAny({ blog }) {
         if (blog.external_link !== null) {
-            return (<pre><a href={blog.external_link.link} target="_blank">{blog.external_link.title}</a></pre>)
+            return (<a href={blog.external_link.link} target="_blank" className={styles.externalLink}>{blog.external_link.title}</a>)
         }
         return null
     }
