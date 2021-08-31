@@ -13,7 +13,7 @@ export default function Home({blogs}) {
             <div className={styles.mainContainer}>
                 {blogs.map((blog) => (
                     <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
-                        <div className={styles.blogCard}>
+                        <div className={styles.blogCard} key={blog.slug}>
                             <div className="tags">
                                 {blog.tags.map((tag) => (
                                     <p style={{backgroundColor: tag.color}}>tag</p>
