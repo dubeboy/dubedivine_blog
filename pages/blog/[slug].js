@@ -9,7 +9,7 @@ export default function blog({ blog }) {
             <div className="mainContainer">
                 <div className="tags">
                     {blog.tags.map((tag) => (
-                        <p style={{backgroundColor: tag.color}}>tag</p>
+                        <p style={{backgroundColor: tag.color}}>{ tag.name }</p>
                     ))}
                 </div>
                 <p className={styles.publisedDate}>Published on {new Date(blog.published_at).toDateString()}</p>
