@@ -22,7 +22,7 @@ const Layout = ({children, title, metaDescription }) => {
                 <meta property="og:url" content={`https://dubedivine.com${asPath}`} />
                 <meta property="og:title" content={ title } />
                 <meta property="og:description" content={ metaDescription } />
-                <meta property="og:image" content={`${server}/divine_dube.jpeg`} />
+                <meta property="og:image" content="https://dubedivine.com/divine_dube.jpeg" />
             </Head>
             <Nav/>
             <div className={styles.container}>
