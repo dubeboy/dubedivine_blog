@@ -8,4 +8,4 @@ if(env === "development") {
     strapiURL = host
 }
 
-export const server = strapiURL
+export const server = "https://radiant-garden-05717.herokuapp.com"

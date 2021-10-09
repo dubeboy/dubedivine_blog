@@ -6,12 +6,6 @@
 .blogContent p {
     line-height: 1.6;
     font-size: 12.5pt;
-
-}
-
-.blogContent code {
-    /*background-color: red;*/
-    padding: 16px;
 }
 
 .blogContent pre {
@@ -20,6 +14,22 @@
     padding: 16px;
     border-radius: 10px;
 }
+
+.blogContent blockquote {
+    width: 100%;
+    background-color: #16324f;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border-left: 6px solid #967b0d;
+}
+
+.blogContent code {
+    background-color: #16324f;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
 
 .blogContent img {
     display: block;
@@ -37,6 +47,12 @@
     padding: 10px;
     display: block;
 }
+
+.blogContent a {
+    text-decoration: underline;
+}
+
+
 
 .externalLink {
     padding: 16px;
