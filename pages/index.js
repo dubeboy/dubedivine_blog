@@ -35,6 +35,11 @@ export default function Home({blogs}) {
 export const getStaticProps = async () => {
     const res = await fetch(`${server}/blogs`)
     const blogs = await res.json()
+    blogs.sort(function(a,b){
+        // Turn your strings into dates, and then subtract them
+        // to get a value that is either negative, positive, or zero.
+        return new Date(b.published_at) - new Date(a.published_at);
+    });
     return {
         props: {
             blogs

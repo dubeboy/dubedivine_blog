@@ -16,7 +16,6 @@
 }
 
 .blogContent blockquote {
-    width: 100%;
     background-color: #16324f;
     padding: 8px 16px;
     border-radius: 10px;
@@ -29,7 +28,6 @@
     padding-right: 8px;
 
 }
-
 
 .blogContent img {
     display: block;
@@ -64,6 +62,12 @@
     display: inline-block;
     zoom:1;
     *display:inline;
+}
+
+@media (max-width: 600px) {
+    .blogContent img {
+        width: 90%;
+    }
 }
 
 
